@@ -1,0 +1,7 @@
+<form #monFormulaire="ngForm" (ngSubmit)="enregistrer(monFormulaire)">
+  <div>
+    <label>Nom</label>
+    <input type="text" [(ngModel)]="formData.nom" name="nom">
+    {{ formData.nom }}
+  </div>
+</form>
