@@ -1,0 +1,8 @@
+<h2>À faire</h2>
+<ul *ngIf="list.length">
+  <li *ngFor="let task of list">{{ task }}</li>
+</ul>
+
+<div *ngIf="!list.length">
+  <p><em>Aucune tâche enregistrée</em></p>
+</div>

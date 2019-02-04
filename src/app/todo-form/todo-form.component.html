@@ -1,0 +1,13 @@
+<h2>Ajouter une tâche à la liste</h2>
+
+<p><a href="https://angular.io/guide/forms" target="_blank">https://angular.io/guide/forms</a></p>
+
+<form #todoForm="ngForm" (ngSubmit)="addItem(todoForm.valid)" novalidate autocomplete="off">
+  <div>
+    <label>Nouvelle tâche : </label>
+    <input type="text" [(ngModel)]="formData.task" name="task" required minlength="2">
+    <input type="submit" value="Ajouter à la liste">
+  </div>
+</form>
+
+<app-todo-list></app-todo-list>
